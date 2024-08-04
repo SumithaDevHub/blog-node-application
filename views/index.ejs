@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+  <a href="/new" class="new-article-btn">New Article</a>
+  <% articles.forEach(article => { %>
+  <div class="card">
+    <h3><%= article.title %></h3>
+    <p><%= article.createdAt %></p>
+    <p><%= article.description %></p>
+    <form action="/edit/<%= article.id %>" method="GET" style="display: inline">
+      <button type="submit">Edit</button>
+    </form>
+    <form
+      action="/delete/<%= article.id %>"
+      method="POST"
+      style="display: inline"
+    >
+      <button type="submit">Delete</button>
+    </form>
+  </div>
+  <% }); %>
+</div>
+
+<%- include("partials/footer.ejs") %>
