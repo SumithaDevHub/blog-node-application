@@ -2,15 +2,6 @@
 
 A simple blog application built with Node.js, Express, and EJS. Users can create, view, and manage blog posts.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Routes](#routes)
-- [Project Structure](#project-structure)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Routes
 
